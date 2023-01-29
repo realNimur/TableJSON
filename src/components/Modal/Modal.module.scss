@@ -1,0 +1,53 @@
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  animation: backdrop-animation 0.2s;
+}
+
+@keyframes backdrop-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 5px;
+
+  &__close {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 0;
+    top: -52px;
+    width: 32px;
+    height: 32px;
+    //background-image: url('../../../assets/images/CharactersPage/closeIcon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  p {
+    margin: 0;
+  }
+}

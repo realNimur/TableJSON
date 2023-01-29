@@ -1,0 +1,16 @@
+.button_add {
+  border-radius: 10px;
+  background-color: rgba(144, 245, 61, 0.7);
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;
+  padding: 5px 15px;
+  margin: 10px auto 0;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgba(144, 245, 61, 1);
+  }
+}
